@@ -1,13 +1,397 @@
+:root{
+  --transition: all 0.3s linear;
+  --clr-primary-5: hsl(205, 78%, 60%);
+  --transition: all 0.3s linear;
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-red-dark: hsl(360, 67%, 44%);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+ 
+.main{
+  margin-bottom: 50%;
+  justify-content: center;
+
+}
+.form {
+  background:lightpink;
+  align-items: center; 
+  display: flex;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+}
+.form input{
+  padding: 0.25rem 0.5rem;
+  background-color:lightslategrey;
+}
+.form label{
+  padding-right: 0.25rem;
+}
+
+ h4{
+  display: inline-block;
+  
+}
+img{
+  height: 60px;
+  width: 80px;
+}
+
+.links {
+  display: flex;
+}
+.links a{
+  margin: 0 0.5rem;
+}
+.social-icons{
+  display: none;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--clr-primary-1);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  color: var(--clr-primary-1);
+  transform: rotate(90deg);
+}
+
+.show-container {
+  height: 10rem;
+}
+.b-example-divider{
+  height: 31rem;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+    .nav-header {
+      padding: 0;
+    }
+        .navbar-toggle {
+          display: none;
+        }
+         .links-container {
+           height: auto !important;
+         }
+    .social-icons {
+      display: flex;
+    }
+    .social-icons a {
+    margin: 0 0.5rem;
+    }
+        .links a:hover {
+          padding: 0;
+          background: transparent;
+        }
+         .social-icons a:hover {
+           color: var(--clr-primary-7);
+         }
+    .links{display: flex;}
+    .links a{
+    padding: 0;
+    margin:0 0.5rem;
+    }
+    
+}
+.navbar{
+  
+}
+.search{
+ margin-left: 35rem;
+ margin-top: 5rem;
+}
+.form-control{
+ background-color:#6C757D ;
+}
+.form-label{
+font-size: medium;
+}
+.listItem{
+margin-bottom: 20px;
+font-size: 25px;
+color:#444;
+font-weight: 300;
+}
+.list{
+  margin-left:3rem
+}
+table{
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 12rem;
+  border-spacing: 7px;
+  color:#444;
+}
+tr{
+  margin-bottom: 20px;
+}
+th{
+  width: 250px;
+  text-align: left;
+  font-size: 20px;
+}
+td {
+  width: 250px;
+  font-size: 20px;
+}
+
+h5{
+  text-align: center;
+}
+h3{
+  text-transform: capitalize;
+}
+button{
+  margin-left: 13rem;
+}
+.font{
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  
+}
+.jobSpan{
+  text-transform: uppercase;
+  text-decoration-color: aqua;
+}
+img{
+  display: flex;
+  justify-content: center;
+}
+.prev-btn, .next-btn{
+  margin:0 0.5rem;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border:none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color:rgb(0, 213, 255);
+}
+.random-btn{
+  margin:2rem;
+  margin-left: 0rem;
+  position: absolute;
+  left: 44rem;
+}
+.btn-container{
+  position: absolute;
+  left:45rem;
+  
+}
+/*
+=============== 
+Questions
+===============
+*/
+ .mainn{
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: purple;
+ }
+ .containerr{
+  width: 90vh;
+  margin: 5rem auto;
+  background: white;
+  border-radius: 5px;
+  padding: 2.5rem 2rem;
+  max-width: 920px;
+  display: grid;
+  gap:1rem 2rem;
+
+ }
+ .btn-info{
+  background: transparent;
+  border-color: transparent;
+  width: 2rem;
+  height:2rem;
+  background: #eae6eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color:rgb(250, 13, 13);
+  cursor:pointer;
+  margin-left: 1rem;
+  align-self:center;
+  min-width: 2rem;
+ }
+  .question{
+   padding:1rem 1.5rem;
+   border:2px solid lightgrey;
+   margin-bottom: 1rem;
+   border-radius: 0.25rem;
+   box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
+ } 
+ .question p{
+   color:hsl(209, 34%, 30%);
+   margin-bottom: 0;
+   margin-top:0.5rem;
+ }
+ .question header{
+   display:flex;
+   justify-content: space-between;
+   align-items:center;
+ }
+ .question header h4{
+   margin-bottom: 0; 
+ 
+ }
+ .question h4 {
+   text-transform: none;
+   line-height: 1.5; 
+ }
+
+ @media screen and (min-width: 992px) {
+   .container {
+     display: grid;
+     grid-template-columns: 250px 1fr;
+   }
+ }
+ .container h3 {
+   line-height: 1.2;
+   font-weight: 500;
+ }
+/*
+=============== 
+Our Menus
+===============
+*/
+.menu{
+  padding: 5rem 0;
+}
+.title{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.underline{
+  width:5rem;
+  height: 0.25rem;
+  background-color: goldenrod;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-center{
+  width:90vw;
+  margin:6rem auto;
+  max-width: 1170px;
+  display:grid;
+  gap:3rem 2rem;
+  justify-items: center;
+}
+.menu-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 25rem;
+}
+.photo {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border: 0.25rem solid goldenrod;
+  border-radius: 0.25rem;
+  display: block;
+}
+.item-info header{
+  display: flex;
+  justify-content: space-between;/*headerdaki yazılar kenarlara yaklaştı*/
+  border-bottom: 0.5px dotted lightgrey;/*desc üstüne header biten yere ince nokta ile bir çizgi çekti*/
+}
+.item-info h4{
+  margin-bottom: 0.5rem;
+}
+.price{
+  color:goldenrod;
+}
+.item-text{
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+.btn-container{
+  width:3rem;
+  height: 2rem;
+  /* margin-bottom: 4rem; */
+  display: flex;/*butonları our menunun altına sayfaya ortaladı*/
+  justify-content:center;
+  
+}
+.category-buttons{
+  background: transparent;
+  border-color:transparent;/*kenarları görünmez yaptı*/
+  font-size:1rem;
+  text-transform: capitalize;
+  color:goldenrod;
+  cursor: pointer;/*parmak işareti ile gösteriyor*/
+  border-radius: 0.25rem;
+  margin:0 0.5rem; /*margini verince category butonları birbirine yaklaştı*/
+  padding:0.375rem 0.75rem;
+  transition: all 0.3s linear;/*butonun üzerine gelince buton yavaça istenen yönder büyür*/
+}
+.category-buttons:hover{
+  background: goldenrod;
+  color:white;
+}
+@media screen and (min-width: 1200px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;/*ekran tam açık olursa menuler iki sütün halinde olacak*/
+  }
+
+  .photo {
+    height: 150px;
+  }
+}
+@media screen and (min-width:768px){/* ekran 768 pix den küçük olana kadar resimlerin yanına yazılar geldi önceden yazılar resmin altındaydı*/
+  .menu-item{
+    grid-template-columns: 225px 1fr;
+    gap:0 1.25rem;
+    max-width: 40rem;
+  }
+  .photo{
+    height: 175px;
+  }
 }
