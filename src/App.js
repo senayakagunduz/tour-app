@@ -8,6 +8,9 @@ import SearchBar from "./components/SearchBar";
 import Review from "./components/Review";
 import Questions from "./components/Questions";
 import MainMenu from "./components/MainMenu";
+import JobCenter from "./components/JobCenter";
+import NavigationBar from "./components/NavigationBar";
+import SideBar from "./components/SideBar";
 
 function App() {
   return (
@@ -20,7 +23,10 @@ function App() {
       {/* <SearchBar /> */}
       {/* <Footer /> */}
       {/* <Questions /> */}
-      <MainMenu />
+      {/* <MainMenu /> */}
+      {/* <JobCenter /> */}
+      <NavigationBar />
+      {/* <SideBar /> */}
     </div>
   );
 }

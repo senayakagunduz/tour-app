@@ -19,13 +19,13 @@ const Review = () => {
   };
   const nextPerson = () => {
     setIndex((index) => {
-      let newIndex = index - 1;
+      let newIndex = index + 1;
       return checkNumber(newIndex);
     });
   };
   const prevPerson = () => {
     setIndex((index) => {
-      let newIndex = index + 1;
+      let newIndex = index - 1;
       return checkNumber(newIndex);
     });
   };
@@ -38,53 +38,28 @@ const Review = () => {
   };
 
   return (
-    <>
-      <div>
-        <div
-          className="container mb-3 border border-5"
-          style={{
-            height: "30rem",
-            width: "40rem",
-            marginTop: "40px",
-          }}
-        >
-          <img
-            src={image}
-            className="rounded-circle mx-auto border border-3"
-            alt={name}
-            style={{
-              marginTop: "2rem",
-              height: "10rem",
-              width: "10rem",
-            }}
-          />
-          {/* <span className="quote-icon">
-            <FaQuoteRight />
-          </span> */}
-          <div className="font">
-            <h3>{name}</h3>
-            <h4 className="jobSpan">
-              <span>{job}</span>
-            </h4>
-            <p>{text}</p>
-          </div>
-
-          <div className="btn-container">
-            <button className="prev-btn " onClick={nextPerson}>
-              <FaChevronLeft />
-            </button>
-            <button className="next-btn" onClick={prevPerson}>
-              <FaChevronRight />
-            </button>
-          </div>
-          <div>
-            <button className="random-btn btn btn-info" onClick={randomPerson}>
-              surprise me
-            </button>
-          </div>
-        </div>
+    <article className="review">
+      <div className="img-container">
+        <img src={image} alt={name} className="person-img" />
+        <span className="quote-icon">
+          <FaQuoteRight />
+        </span>
       </div>
-    </>
+      <h4 className="author">{name}</h4>
+      <p className="job">{job}</p>
+      <p className="info">{text}</p>
+      <div className="button-container">
+        <button className="prev-btn" onClick={prevPerson}>
+          <FaChevronLeft />
+        </button>
+        <button className="next-btn" onClick={nextPerson}>
+          <FaChevronRight />
+        </button>
+      </div>
+      <button className="random-btn" onClick={randomPerson}>
+        surprise me
+      </button>
+    </article>
   );
 };
 
