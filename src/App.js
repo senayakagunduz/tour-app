@@ -11,22 +11,26 @@ import MainMenu from "./components/MainMenu";
 import JobCenter from "./components/JobCenter";
 import NavigationBar from "./components/NavigationBar";
 import SideBar from "./components/SideBar";
+import GroceryMain from "./components/GroceryMain";
+import CompleteWebsite from "./website/CompleteWebsite";
 
 function App() {
   return (
     <div className="App">
       {/* <Main /> */}
-      {/*<Login />*/}
+      {/* <Login /> */}
       {/* <NavBar /> */}
       {/* <Review /> */}
       {/* <Emp /> */}
       {/* <SearchBar /> */}
       {/* <Footer /> */}
-      {/* <Questions /> */}
+      <Questions />
       {/* <MainMenu /> */}
       {/* <JobCenter /> */}
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       {/* <SideBar /> */}
+      {/* <GroceryMain /> */}
+      {/* <CompleteWebsite /> */}
     </div>
   );
 }
